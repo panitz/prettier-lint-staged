@@ -1,0 +1,20 @@
+{
+  "name": "prettier-lint-staged",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Thorsten Panitz <th.panitz@googlemail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "2.3.2"
+  },
+  "lint-staged": {
+    "**/*.{js,json}": [
+      "yarn prettier --write"
+    ]
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
